@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import FullName from "./Profile/FullName";
+import Bio from "./Profile/Bio";
+import emna from './Profile/image/emna.jpg';
+import "./style.css";
+
+
+export default function App() {
+  const handleName=e =>
+{ e.preventDefault();
+alert(this.props.name);
+};
+return (
+ <>
+ <section>
+ <div className="card">
+<div className="card-header"> </div>
+<br/>
+<div className="card-body"> 
+
+<FullName name="Emna Khilfaoui" onMouseMove={handleName}>
+<img src={emna} alt="emna"
+  width="220" className="img"/>
+</FullName>  
+<Bio text="React js developper"/>
+
+
+</div>
+
+
+
+
+
+</div>
+ </section>
+  
+ </>
+);
 }
-
-export default App;

@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.Bio.text{
+  color: red;
+}

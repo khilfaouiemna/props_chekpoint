@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet');
+*{
+margin:0;
+padding:0;
+}
+
+section{
+ background:pink;
+ height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ text-align: center;
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+.card{
+width:500px;
+/* //height: 500px; */
+border-radius:40px;
+background: white;
+}
+
+.img{
+border-radius: 40%;
+width: 90px;
+height: 90px;
+padding: 15px;
+border: 5px solid black;
+overflow: hidden;
+}
+.card-body{
+padding: 0 30px 50px;
+}
+
+.adress{
+  font-size:15px;
+
+}
+.adress,.text{
+ font-weight: 400;
+color:#aaaaaa;
+}
+
+.card-footer{
+ border-top:2px solid #dddddd;
+ display: flex;
+ padding: 0 25px; 
+}
+
+.card-footer .a1{
+ flex: 1;
+ height: 100px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.nombre{
+font-size:16px;
+margin-bottom:6px;
+}
+
+.text{
+font-size:11px;
+letter-spacing: 1px;
+}
